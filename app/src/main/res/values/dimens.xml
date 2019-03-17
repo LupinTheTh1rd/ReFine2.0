@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingLeftForFragment" value="16dp"/>
+    <dimen name="paddingRightForFragment" value="16dp"/>
+
+</resources>
