@@ -4,10 +4,10 @@ package com.example.ritwik.photoeditor.Interface;
  * Created by ritwik on 17-03-2019.
  */
 
-public interface EditImageFragementListener {
+public interface EditImageFragmentListener {
     void onBrightnessChanged(int brightness);
     void onSaturationChanged(float saturation);
-    void onConstraintChanged(float constraint);
+    void onContrastChanged(float contrast);
     void onEditStarted();
     void onEditCompleted();
 

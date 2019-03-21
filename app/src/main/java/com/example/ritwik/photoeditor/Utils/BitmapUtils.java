@@ -22,7 +22,7 @@ import java.io.InputStream;
 
 public class BitmapUtils {
 
-    public static Bitmap getBitmapFromAssets(Context context, String fileName, int width, int height) {
+    public static Bitmap getBitmapFromAssets(Context context, String fileName, int i, int i1) {
         AssetManager assetManagar = context.getAssets();
 
         InputStream inputStream;
@@ -31,7 +31,7 @@ public class BitmapUtils {
             BitmapFactory.Options options = new BitmapFactory.Options();
             options.inJustDecodeBounds = true;
             inputStream = assetManagar.open(fileName);
-            options.inSampleSize=calculateInSampleSize(options,width,height);
+            options.inSampleSize=calculateInSampleSize(options,i,i1);
             options.inJustDecodeBounds = false;
             return BitmapFactory.decodeStream(inputStream,null,options);
 
